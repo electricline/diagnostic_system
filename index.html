@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Humintec</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" />
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <script src="https://d3js.org/d3.v3.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+   
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <h2>Humintec</h2>
+              <div class="input-group-append">
+              </div>
+            </div>
+          </form>
+
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Intelligent Occupational Disease System</h1>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Criterion</div>
+                      <input value="1.0" type="text" name="criterion" size="20">
+                    </div>
+                    <div class="col-auto">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Number of questions selected</div>
+                    </div>
+                    <div class="col-auto">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">occupational disease probability</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">80%</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Graph Selection</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Area Chart -->
+             <!-- Area Chart -->
+            <div class="m-0 font-weight-bold text-dark" style="overflow:auto; width:50%; height:425px; padding:2%;" >
+
+               <header>
+               <h2>Survey</h2>
+               </header>
+               
+            
+                  <p>직업병 진단을 위한 설문조사 입니다.<br>
+                  KWCS ruleset을 이용하여 직업병 유무를 판단합니다. </p>
+            
+
+               <br>
+            
+               <div class="card-header py-3">
+                  <div class="mySlides">
+                     <div class="row.aln-center">
+                        <div class="card shadow mb-4" style =" padding:2%;">
+                        <h6>1. 나이를 선택해 주세요.</h6>
+                        <br>
+                        <label for="age">
+
+                           <div class="slider1" style="width:100%"> </div>
+                           <input type="text" name="age1" size="4" text-align="center" placeholder="나이최소"
+                              id="11" sytle="color:blue">
+                           <input type="text" name="age2" size="4" text-align="center" placeholder="나이최대"
+                              id="12" sytle="color:blue">
+
+                        </label>
+                        <script>
+
+                           $(".slider1").slider({
+                              range: true,
+                              min: 15,
+                              max: 120,
+                              values: [20, 30],
+                              slide: function (event, ui) {
+                                 $(this).next().val(ui.values[0]);
+                                 $(this).next().next().val(ui.values[1]);
+                              }
+                           });
+                        </script>
+                        </div>
+                     </div>
+
+
+                     <br><br>
+
+
+                     <div class="row.aln-center">
+                           <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>2. 성별을 선택해주세요.</h6>
+                        <br>
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="2" name="2" id="21" value="male">
+                              <span class="label-text">남자</span>
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="2" name="2" id=22 value="female">
+                              <span class="label-text">여자</span>
+                           </label>
+                        </div>
+
+
+
+                        </div>
+                     </div>
+
+                     <br><br>
+
+
+
+                     <div class="row.aln-center">
+                           <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>3. 월평균 소득을 선택해주세요.</h6>
+                        <br>
+
+                        <label for="income">
+                           <div class="slider2" style="width:100%"> </div>
+                        
+                           <input type="text" name="income1" size="4" text-align="center" placeholder="소득(만원)" id="31" sytle="color:blue">
+                           <input type="text" name="income2" size="4" text-align="center" placeholder="소득(만원)" id="32" sytle="color:blue">
+
+                        </label>
+
+                        <script>
+
+                           $(".slider2").slider({
+                              range: true,
+                              min: 0,
+                              max: 10000,
+                              values: [20, 30],
+                              slide: function (event, ui) {
+                                 $(this).next().val(ui.values[0]);
+                                 $(this).next().next().val(ui.values[1]);
+                              }
+                           });
+                        </script>
+
+                        </div>
+                     </div>
+
+                     <br><br>
+
+
+                     <div class="row.aln-center">
+                           <div class="card shadow mb-4" style =" padding:2%;">
+                        <h6>4. 직업분류</h6>
+                        <br>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="4" name="4" id="41" value="functional personnel">
+                              <span class="label-text">functional personnel</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="4" name="4" id="42" value="etc">
+                              <span class="label-text">etc</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="4" name="4" id="43" value="officer">
+                              <span class="label-text">officer</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="4" name="4" id="44" value="technician">
+                              <span class="label-text">technician</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" name="4" id="45" value="service personnel">
+                              <span class="label-text">service personnel</span>
+                           </label>
+                        </div>
+
+                        </div>
+                     </div>
+
+
+                     <br><br>
+
+                     <div class="row.aln-center">
+                           <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>5. 실수하면 자신의 몸을 얼마나 자주 다치십니까?</h6>
+                        <br>
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="5" name="5" id="51" value="all">
+                              <span class="label-text">all</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="5" name="5" id="52" value="often">
+                              <span class="label-text">often</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="5" name="5" id="53" value="no">
+                              <span class="label-text">no</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="5" name="5" id="54" value="etc">
+                              <span class="label-text">etc</span>
+                           </label>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <br><br>
+
+                  <div class="mySlides">
+                     <div class="row.aln-center">
+                           <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>6. 실수하면 일이 얼마나 자주 지연됩니까?</h6>
+                        <br>
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="6" name="6" id="61" value="all">
+                              <span class="label-text">all</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="6" name="6" id="62" value="often">
+                              <span class="label-text">often</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="6" name="6" id="63" value="no">
+                              <span class="label-text">no</span>
+                           </label>
+                        </div>
+
+                        <div class="form-check">
+                           <label>
+                              <input type="checkbox" class="6" name="6" id="64" value="etc">
+                              <span class="label-text">etc</span>
+                           </label>
+                        </div>
+                        </div>
+                     </div>
+                  
+                     <br><br>
+
+
+                  <div class="row.aln-center">
+                        <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>7. 종사상 지위는?</h6>
+                        <br>
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="7" name="7" id="71" value="wage earner">
+                           <span class="label-text">wage earner</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="7" name="7" id="72" value="businessman">
+                           <span class="label-text">businessman</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="7" name="7" id="73" value="etc">
+                           <span class="label-text">etc</span>
+                        </label>
+                        </div>
+                     </div>
+                  </div>
+
+                  <br><br>
+
+
+
+                  <div class="row.aln-center">
+                        <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>8. 임금 근로자의 종사상 지위? </h6>
+                        <br>
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="8" name="8" id="81" value="A day labor">
+                           <span class="label-text">A day labor</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="8" name="8" id="82" value="Commercial worker">
+                           <span class="label-text">Commercial worker</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="8" name="8" id="83" value="Temporary worker">
+                           <span class="label-text">Temporary worker</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="8" name="8" id="84" value="etc">
+                           <span class="label-text">etc</span>
+                        </label>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                  <br><br>
+
+                  <div class="row.aln-center">
+                        <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>9. 일주일 근무시간은?</h6>
+                        <br>
+
+                        <label for="work_hour">
+                        <div class="slider3" style="width:100%"> </div>
+                        
+                        <input type="text" name="laborHour1" size="4" text-align="center" placeholder="시간"
+                           id="91" sytle="color:blue">
+                        <input type="text" name="laborHour2" size="4" text-align="center" placeholder="시간"
+                           id="92" sytle="color:blue">
+
+                        </label>
+                        <script>
+
+                        $(".slider3").slider({
+                           range: true,
+                           min: 0,
+                           max: 200,
+                           values: [20, 30],
+                           slide: function (event, ui) {
+                              $(this).next().val(ui.values[0]);
+                              $(this).next().next().val(ui.values[1]);
+                           }
+                        });
+                        </script>
+                     </div>
+                  </div>
+
+                  <br><br>
+
+
+                  <div class="row.aln-center">
+                        <div class="card shadow mb-4" style =" padding:2%;">
+
+                        <h6>10. 피로하거나 통증 주는 자세로 일하는 비율?</h6>
+                        <br>
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="10" name="10" id="101" value="all">
+                           <span class="label-text">all</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="10" name="10" id="102" value="often">
+                           <span class="label-text">often</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="10" name="10" id="103" value="no">
+                           <span class="label-text">no</span>
+                        </label>
+                        </div>
+
+                        <div class="form-check">
+                        <label>
+                           <input type="checkbox" class="10" name="10" id="104" value="etc">
+                           <span class="label-text">etc</span>
+                        </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <br><br>
+
+               <div class="mySlides">
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>11. 사람을 들어올리거나 이동시키는 근무 시간 비율?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="11" name="11" id="111" value="all">
+                        <span class="label-text">all</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="11" name="11" id="112" value="often">
+                        <span class="label-text">often</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="11" name="11" id="113" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="11" name="11" id="114" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+
+
+               <br><br>
+
+
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>12. 물건을 들어올리거나 이동시키는 근무 시간 비율?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="12" name="12" id="121" value="all">
+                        <span class="label-text">all</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="12" name="12" id="122" value="often">
+                        <span class="label-text">often</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="12" name="12" id="123" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="12" name="12" id="124" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+
+               <br><br>
+
+
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>13. 계속 서있는 자세로 있는 비율?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="13" name="13" id="131" value="all">
+                        <span class="label-text">all</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="13" name="13" id="132" value="often">
+                        <span class="label-text">often</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="13" name="13" id="133" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="13" name="13" id="134" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+
+               <br><br>
+
+
+
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>14. 반복적인 손동작 팔동작 비율은?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="14" name="14" id="141" value="all">
+                        <span class="label-text">all</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="14" name="14" id="142" value="often">
+                        <span class="label-text">often</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="14" name="14" id="143" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="14" name="14" id="144" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+
+               <br><br>
+
+
+
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>15. 원래 근무지 외의 근무지에서 지난 3개월간 근무 경험이 있습니까?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="15" name="15" id="151" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="15" name="15" id="152" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="15" name="15" id="153" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               </div>
+
+               <br><br>
+
+               <div class="mySlides">
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>16. 한달에 10시간 이상 근무한 날 수?</h6>
+                     <br>
+
+                     <label for="work_hour">
+                        <div class="slider4" style="width:100%"> </div>
+                        
+                        <input type="text" size="4" text-align="center" placeholder="일" id="161"
+                        sytle="color:blue">
+                        <input type="text" size="4" text-align="center" placeholder="일" id="162"
+                        sytle="color:blue">
+
+                     </label>
+                     <script>
+
+                        $(".slider4").slider({
+                        range: true,
+                        min: 0,
+                        max: 31,
+                        values: [20, 30],
+                        slide: function (event, ui) {
+                           $(this).next().val(ui.values[0]);
+                           $(this).next().next().val(ui.values[1]);
+                        }
+                        });
+                     </script>
+                  </div>
+               </div>
+            
+
+               <br><br>
+
+               
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>17. 짧게 반복되는 작업(1분 이내)가 있습니까?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="17" name="17" id="171" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="17" name="17" id="172" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="17" name="17" id="173" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               
+               <br><br>
+
+
+               
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>18. 빠른 속도로 작업하는 비율?</h6>
+                     <br>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="18" name="18" id="181" value="all">
+                        <span class="label-text">all</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="18" name="18" id="182" value="often">
+                        <span class="label-text">often</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="18" name="18" id="183" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="18" name="18" id="184" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+
+               <br><br>
+
+               
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>19. 엄격한 마감시간을 맞추는 비율?</h6>
+                     <br>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="19" name="19" id="191" value="all">
+                        <span class="label-text">all</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="19" name="19" id="192" value="often">
+                        <span class="label-text">often</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="19" name="19" id="193" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="19" name="19" id="194" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               
+               <br><br>
+
+
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>20. 일이 단조롭다?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="20" name="20" id="201" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="20" name="20" id="202" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="20" name="20" id="203" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               </div>
+
+               <br><br>
+
+               <div class="mySlides">
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>21. 일의 순서를 바꿀 수 있는지 여부?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="21" name="21" id="211" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="21" name="21" id="212" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="21" name="21" id="213" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+      
+               <br><br>
+
+
+            
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>22. 작업속도, 작업률을 바꿀 수 있는지?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="22" name="22" id="221" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="22" name="22" id="222" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="22" name="22" id="223" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+
+               <br><br>
+
+
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>23. 직장에 근로자 의견 대표하는 근로자 활동(노조, 노사) 여부?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="23" name="23" id="231" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="23" name="23" id="232" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="23" name="23" id="233" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+         
+               <br><br>
+
+
+               
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+      
+                     <h6>24. 현재 일이 건강이나 안전에 위험한 일이라고 생각하나요?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="24" name="24" id="241" value="yes">
+                        <span class="label-text">yes</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="24" name="24" id="242" value="no">
+                        <span class="label-text">no</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="24" name="24" id="243" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            
+               <br><br>
+
+
+               
+               
+               <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>25. 현재 일이 건강에 어떤 영향을 미치나요?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="25" name="25" id="251" value="bad effect">
+                        <span class="label-text">bad effect</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="25" name="25" id="252" value="positive effect">
+                        <span class="label-text">positive effect</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="25" name="25" id="253" value="no effect">
+                        <span class="label-text">no effect</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="25" name="25" id="254" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               </div>
+            
+               <br><br>
+
+               <div class="mySlides">
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>26. 현재 전반적인 건강 상태는?</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="26" name="26" id="261" value="bad">
+                        <span class="label-text">bad</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="26" name="26" id="262" value="so-so">
+                        <span class="label-text">so-so</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="26" name="26" id="263" value="good">
+                        <span class="label-text">good</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="26" name="26" id="264" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            
+               <br><br>
+
+
+               
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6> 27. 12개월 동안 아픈데도 출근한 경험?</h6>
+                     
+                     <label for="work_hour">
+                        <div class="slider5" style="width:80%"> </div>
+                        
+                        <input type="text" size="4" text-align="center" placeholder="~일" id="271"
+                        sytle="color:blue">
+                        <input type="text" size="4" text-align="center" placeholder="~일" id="272"
+                        sytle="color:blue">
+                     </label>
+
+                     <script>
+                        $(".slider5").slider({
+                        range: true,
+                        min: 0,
+                        max: 200,
+                        values: [20, 30],
+                        slide: function (event, ui) {
+                           $(this).next().val(ui.values[0]);
+                           $(this).next().next().val(ui.values[1]);
+                        }
+                        });
+                     </script>
+
+                  </div>
+               </div>
+               
+               <br><br>
+
+
+               
+               <div class="row.aln-center">
+                     <div class="card shadow mb-4" style =" padding:2%;">
+
+                     <h6>28. 현재 근로상태에 대해 어떻게 생각하나요??</h6>
+                     <br>
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="28" name="28" id="281" value="bad">
+                        <span class="label-text">bad</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="28" name="28" id="282" value="so-so">
+                        <span class="label-text">so-so</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="28" name="28" id="283" value="good">
+                        <span class="label-text">good</span>
+                        </label>
+                     </div>
+
+                     <div class="form-check">
+                        <label>
+                        <input type="checkbox" class="28" name="28" id="284" value="etc">
+                        <span class="label-text">etc</span>
+                        </label>
+                     </div>                     
+                  </div>
+               </div>
+                    <button id="submint" onclick="UserSurvey();" style="text-align: right">result</button>
+               </div>
+            </div>
+
+            <script>
+
+               //var ddata = JSON.stringify(ruledata);
+               var ddata = <%-JSON.stringify(ruledata)%>;
+               //var rulesetArray = ddata.split('\r\n');
+               var rulesetArray = ddata;
+               
+         
+               function continuousTest(from, to, first, last) {
+                  if (from <= first && last <= to) {
+                     return 1;
+                  }
+                  else
+                     return -1;
+               }
+
+               function selectTest(criteria, inputstr) {
+                  var menu = criteria.split(';');
+                  for (var cnt = 0; cnt < menu.length; cnt++) {
+                     if (inputstr == menu[cnt])
+                        return 1;
+                  }
+                  return -1;
+               }
+
+               var ddd = [];
+
+               function UserSurvey() { //알고리즘 
+
+                  for (var jj = 1; jj < 29; jj++) {
+                     var checkedValue = "";
+                     if (jj == 1 || jj == 3 || jj == 9 || jj == 27 || jj == 16) {
+                        var from = document.getElementById(jj + "1").value;
+                        var to = document.getElementById(jj + "2").value;
+                        if (from)
+                           if (to)
+                           checkedValue += from + ';' + to;
+                        checkedValue += ';';
+                     }
+                     else {
+                        var inputElements = document.getElementsByClassName(jj + "");
+                        for (var i = 0; i < inputElements.length; ++i) {
+                           if (inputElements[i].checked) {
+                           checkedValue += inputElements[i].value + ";";
+
+                           }
+                        }
+                     }
+                     ddd[jj - 1] = checkedValue.substr(0, checkedValue.length - 1);
+                  }
+
+                  //1:on,2:non
+                  var resultchk = [];
+
+                  let test = rulesetArray[0];
+                  console.log(Object.values(test)[1])
+
+
+                  for (var cntnum = 0; cntnum < rulesetArray.length; cntnum++) {
+                     resultchk[cntnum] = 1;
+                     // var smallRule = rulesetArray[cntnum].split('\t');
+                     test = rulesetArray[cntnum];
+                     var smallRule = Object.values(test);
+
+                     loop1:
+                     for (var rulenum = 1; rulenum < smallRule.length; rulenum++) {
+                        
+                        if (rulenum == 1 || rulenum == 3 || rulenum == 9 || rulenum == 27 || rulenum == 16) {
+                           if (smallRule[rulenum] == "" || ddd[rulenum] == "")
+                              continue loop1;
+                           var contCrit = smallRule[rulenum].split(';');
+                           var contObj = ddd[rulenum].split(';');
+                           if (continuousTest(contCrit[0], contCrit[1], contObj[0], contObj[1]) == -1) {
+                              resultchk[cntnum] = 2;
+                              break;
+                           }
+                        }
+
+                        else {
+                           if (smallRule[rulenum] == "" || ddd[rulenum] == "")
+                              continue loop1;
+                           let ho = ddd[rulenum-1];
+
+                        
+                           var selected = ho.split(';');
+                           for (var cc = 0; cc < selected.length; cc++) {
+                           if (smallRule[rulenum].includes(selected[cc]))
+                              continue;
+                           else {
+                              resultchk[cntnum] = 2;
+                              break loop1;
+                           }
+                           }
+
+                        }
+                     }
+
+                  }
+                  var bp = 0;
+                  var rs = 0;
+                  console.log(resultchk)
+
+                  for (var nn = 0; nn < rulesetArray.length; nn++) {
+                     if (nn < 103 && resultchk[nn] == 1)
+                        bp++;
+                     if (nn >= 103 && resultchk[nn] == 1)
+                        rs++;
+                  }
+                  var grade;
+                  if (rs != 0)
+                     grade = bp / rs
+                  else {
+                     grade = 100;
+                  }
+
+                  console.log(bp);
+                  console.log(rs);
+                  console.log(grade);
+                  console.log(ddd);
+                  
+                  var rbp = document.getElementById("bp");
+                  rbp.innerHTML =  "BP: 직업병일 규칙(개수) " + bp + "개";
+
+                  var rrs = document.getElementById("rs");
+                  rrs.innerHTML = "RS: 직업병이 아닐 규칙(개수) " + rs + "개";
+                  
+                  var match = document.getElementById("matchingResult");
+                  match.innerHTML = "직업병일 확률 : BP/RS    " + grade;
+               }
+
+
+            </script>
+
+            <!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">통계 수치</h6>
+                </div>
+                <!-- Card Body -->
+                 <div class="row.aln-center">
+                  <p id="bp"> BP: 직업병일 규칙(개수)</p>
+                  <p id="rs"> RS: 직업병일 아닐 규칙(개수)</p>
+                  <p id="matchingResult"> 직업병일 확률 : BP/RS </p>
+
+              <button class='statistic' name='K04' >K04</button>
+
+              <br><br>
+
+                         <p id = "ht"></p>
+            </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+
+              <!-- Project Card Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Histogram</h6>
+                  <button class='histogram' name='K04' >K04</button>
+                </div>
+                <div class="card-body">
+                <p id = "graph_contents"></p>
+
+            <div id="combochart">
+               <script>
+                  function histogram_graph(x_axis, y_axis) {
+                     var chart = c3.generate({
+                     bindto: "#combochart",
+                     data: {
+                        x: x_axis[0],
+                        columns: [
+                           x_axis,
+
+                           y_axis,
+                        ],
+                        types: {
+                           total: "bar",
+                        },
+                        colors: {
+                           // total: "#1ab394",
+                           total: function(d, inColor) {
+
+                              var colors = ['#FABF62', '#ACB6DD']; 
+
+                              var selected_list = ddd;
+                              
+                              var question_to_index= {'K04': 4 , 'K52_a' : 5, 'K52_c' : 6, 'Q06' : 7, 'Q06_a' : 8,
+                                 'Q24_a' : 10, 'Q24_b' : 11, 'Q24_c' : 12, 'Q24_d' : 13, 'Q24_e' : 14,
+                                 'Q27_d' : 15, 'Q44_a' : 17, 'Q45_a' : 18, 'Q45_b' : 19, 'Q49_d' : 20, 
+                                 'Q50_a' : 21, 'Q50_c' : 22, 'Q63' : 23, 'Q66' : 24, 'Q67' : 25,
+                                 'Q68' : 26, 'Q76' : 28 };
+
+                              var question_number = question_to_index[x_axis[0]];
+
+                              var selected_answer = ddd[question_number-1];
+
+                              if(selected_answer === undefined){
+                                 return '#FABF62';
+                              } else {
+
+                                 // for문으로 배열 길이만큼 x_axis.indexOf를 함
+                                 // 그 후에 나온 결과 인덱스들을 저장    
+                                 // 결과 인덱스 값을 비교하면서 색깔 저장!
+
+                                 
+                                 var selected_answer_list = selected_answer.split(';');
+
+                                 var selected_answer_index_list = []
+                                 
+                                 for(var i=0; i<selected_answer_list.length; i++){
+                                    selected_answer_index_list.push(x_axis.indexOf(selected_answer_list[i])-1);
+                                 }
+
+                                 for(var i=0; i<selected_answer_list.length; i++){
+                                    if(d.index == selected_answer_index_list[i]){
+                                       return colors[0];
+                                    }
+                                 }
+
+                                 return colors[1];
+                              }
+                              
+                           }
+
+                        },
+                     },
+                     bar: {
+                        width: {
+                           ratio: 0.2,
+                        },
+                     },
+                     axis: {
+                        x: {
+                           type: "category",
+                        },
+                     },
+                  });
+               }   
+               </script>
+            </div>
+                  
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 mb-4">
+
+              <!-- Illustrations -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Scatter Plot</h6>
+                  <button class='scatterPlot' name='EF10-age' >EF10-age</button>
+                </div>
+                <div class="card-body">
+                <p id="scatter_contents"></p>
+            <p id="scatter_contents2"></p>
+                 <div id="scatterplot">
+               <script>
+                  function scatter(x_axis, y_axis) {
+                     
+                     let y_lable = y_axis[0];
+                     y_axis[0] = 'KWCS';
+                     let x = x_axis[0];
+                        
+                     var selected_list = ddd;
+                     var question_to_index= {'age' : 1, 'EF10' : 3, 'Q18' : 9,  'Q36' : 16 , 'Q74' : 27};
+                     var question_number_x = question_to_index[x];
+                     var question_number_y = question_to_index[y_lable];
+                     var selected_answer_x = ddd[question_number_x-1];
+                     var selected_answer_y = ddd[question_number_y-1];
+
+                     var selected_x_axis = [];
+                     var selected_y_axis = [];
+                     var not_x_axis = [];
+                     var not_y_axis = [];
+
+                     selected_x_axis.push('x_selected');
+                     selected_y_axis.push('KWCS_selected');
+
+                     console.log(x_axis);
+                     console.log(y_axis);
+
+                     if(selected_answer_x === undefined || selected_answer_y === undefined){
+                              
+                     } else {
+                        var selected_answer_list_x = selected_answer_x.split(';');
+                        var selected_answer_list_y = selected_answer_y.split(';');
+
+                        console.log(selected_answer_list_x, selected_answer_list_y)
+                              
+                        for(var i=1; i<x_axis.length; i++){
+                           if((selected_answer_list_x[0] > x_axis[i] || selected_answer_list_x[1] < x_axis[i]) && 
+                           (selected_answer_list_y[0] > y_axis[i] || selected_answer_list_y[1] < y_axis[i])){
+                              selected_x_axis.push(x_axis[i]);
+                              selected_y_axis.push(y_axis[i]);   
+                           }else {
+                              not_x_axis.push(x_axis[i]);
+                              not_y_axis.push(y_axis[i]);
+                           }
+                        }
+
+                        console.log(selected_x_axis);
+                        console.log(selected_y_axis);
+                              
+                     }
+                  
+
+                     var chart = c3.generate({
+                     bindto: "#scatterplot",
+                     data: {
+                        xs:{
+                           KWCS : x,
+                           KWCS_selected : 'x_selected',
+                        },
+                           columns: [
+                              x_axis,
+                              y_axis,
+                              selected_x_axis,
+                              selected_y_axis,
+                           ],
+                           type: 'scatter',
+                     },
+                     color:{
+                           pattern : ['#FABF62', 'ACB6DD']
+                     },
+                     axis: {
+                        x: {
+                           label: x_axis[0],
+                           tick: {
+                              fit: false
+                           }
+                        },
+                        y: {
+                           label: y_lable
+                        }
+                     }
+                  });
+               };
+               </script>
+            </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+  <script >
+            $(document).ready(function() {
+
+               $('.scatterPlot').click(function() {
+                  var post = $(this).attr('name');
+                  post = post.split('-');
+                  // console.log(post);
+                  $.ajax({
+                     url: '/scatter',
+                     dataType: 'json',
+                     type: 'POST',
+                     data: {data:post},
+                     success: function(rows) {
+                        var data_contents = rows.rows[1];
+                        var data = rows.rows[0];
+                        console.log(data_contents);
+
+                        var x_axis = []
+                        for(var i=0; i< data.length; i++){
+                           x_axis.push(data[i].x_name);
+                        }
+
+                        var y_axis = []
+                        for(var i=0; i< data.length; i++){
+                           y_axis.push(data[i].y_name);
+                        }
+
+                        x_axis.unshift(post[0]);
+                        y_axis.unshift(post[1]);
+                        
+
+                        scatter(x_axis,y_axis);
+                        console.log(data_contents[0]);
+                        
+                        if(data_contents[0].x_name == '▩연령별'){
+                           $('#scatter_contents').text('age. ' + data_contents[0].x_name);
+                           $('#scatter_contents2').text(data_contents[0].y_name);
+                        } else if( data_contents[0].y_name == '▩연령별'){
+                           $('#scatter_contents').text(data_contents[0].x_name);
+                           $('#scatter_contents2').text('age. ' + data_contents[0].y_name);
+                        } else {
+                           $('#scatter_contents').text(data_contents[0].x_name);
+                           $('#scatter_contents2').text(data_contents[0].y_name);                           
+                        }
+
+                        
+                     }
+                  });
+               });
+
+               $('.histogram').click(function() {
+                  var post = $(this).attr('name');
+                  //Ajax POST MEthod TEST
+                  //console.log(typeof(post));
+                  $.ajax({
+                     url: '/histogram',
+                     dataType: 'json',
+                     type: 'POST',
+                     data: {data:post},
+                     success: function(rows){
+                        if(rows) {
+                           var content = rows.rows[1];
+                           var content = content[0];
+                           // console.log(content[post]);
+                           var data = rows.rows[0];
+                           var dictObject = {};
+                           for(var i=0; i<data.length; i++){
+                              dictObject[data[i].data] = data[i].num;
+                           }
+                           var x_axis = Object.keys(dictObject);
+                           x_axis.unshift(post);
+                           var y_axis = Object.values(dictObject);
+                           y_axis.unshift('total');
+                           
+                           //console.log(x_axis);
+                           //console.log(Object.values(dictObject));
+                           $('#graph_contents').text(content[post]);
+                           histogram_graph(x_axis, y_axis);
+                        }
+                     }
+                  })
+               })
+
+
+            });
+   
+         </script>
+
+
+
+
+                <script>
+                     $(document).ready(function(){
+                        $('.statistic').click(function(){
+                        var post = $(this).attr('name');
+                        post = post.split('-');
+                        console.log(post);
+                        $.ajax({
+                          url:'/statistic',
+                          datatype:'json',
+                          type: 'POST',
+                          data: {data:post},
+                          success: function(rows){
+                            if(rows){
+                              var data1 = rows.rows[0];
+                              var data2 = rows.rows[1];
+                              var data3 = rows.rows[2];
+          
+                              console.log('data1 : ' , data1);
+                              console.log('data2 : ' , data2);
+                              console.log('data3 : ' , data3);
+          
+                              var datatext = "";
+          
+                              for(var i=0; i<data1.length; i++){
+                                 
+                                 datatext += data3[i].data + '  Positive : ' + (data1[i].Occupation / data3[i].Count) + '<br>';
+                                 datatext += data3[i].data + '  Negatie : ' + (data2[i].nonOccupation / data3[i].Count) + '<br>';
+                              }
+          
+                              console.log(datatext);
+                              $('#ht').html(datatext);
+                            }
+                          }
+                        })
+                     })
