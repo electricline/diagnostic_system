@@ -5,7 +5,7 @@ KWCS 데이터를 활용해 직업군 별 직업병 예측시스템을 개발과
 
 ## Preview
 
-![interface](interface.png/interface.png)
+![interface](./interface.png)
 
 ## About
 
