@@ -95,6 +95,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Number of questions selected</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="select_num">0</div>
                     </div>
                     <div class="col-auto">
                     </div>
@@ -112,11 +113,11 @@
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">occupational disease probability</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">80%</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="bp/rs">0%</div>
                         </div>
                         <div class="col">
                           <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="bp/rs_progress"></div>
                           </div>
                         </div>
                       </div>
@@ -129,7 +130,7 @@
             </div>
 
             <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
+            <%# <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -143,7 +144,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> %>
           </div>
 
           <!-- Content Row -->
@@ -1284,10 +1285,27 @@
                      grade = 100;
                   }
 
+
                   console.log(bp);
                   console.log(rs);
                   console.log(grade);
-                  console.log(ddd);
+                  var ddd_num=0;
+                  for(var i=0; i<ddd.length; i++){
+                     if(ddd[i] != ""){
+                        ddd_num += 1;
+                     }
+                  }
+                  document.getElementById("select_num").innerHTML = ddd_num;
+                  console.log(ddd_num);
+                  
+                  grade = grade.toFixed(2);
+
+                  document.getElementById("bp/rs").innerHTML = grade*100+'%';
+
+                  var progress_bar = document.getElementById("bp/rs_progress");
+
+                  progress_bar.style = 'width: '+grade*100+'%';
+
                   
                   var rbp = document.getElementById("bp");
                   rbp.innerHTML =  "BP: 직업병일 규칙(개수) " + bp + "개";
@@ -1767,9 +1785,8 @@
                               var datatext = "";
           
                               for(var i=0; i<data1.length; i++){
-                                 
-                                 datatext += data3[i].data + '  Positive : ' + (data1[i].Occupation / data3[i].Count) + '<br>';
-                                 datatext += data3[i].data + '  Negatie : ' + (data2[i].nonOccupation / data3[i].Count) + '<br>';
+                                 datatext += data3[i].data + '  Positive : ' + parseFloat((data1[i].Occupation / data3[i].Count).toFixed(2)) + '<br>';
+                                 datatext += data3[i].data + '  Negatie : ' + parseFloat((data2[i].nonOccupation / data3[i].Count).toFixed(2)) + '<br>';
                               }
           
                               console.log(datatext);
